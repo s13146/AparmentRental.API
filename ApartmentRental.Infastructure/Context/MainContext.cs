@@ -1,6 +1,7 @@
 using AparmentRental.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Index = Microsoft.EntityFrameworkCore.Metadata.Internal.Index;
 
 namespace AparmentRental.Infastructure.Context;
 
@@ -20,5 +21,18 @@ public class MainContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBulider)
     {
         optionsBulider.UseSqlite("DataSource=abo.ApartmentRental.db");
+    }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Apartment>()
+            .HasMany(x => x.Images)
+            .WithOne(x => x.Apartment)
+            .OnDelete(DeleteBehavior.Cascade);
+        modelBuilder.Entity<Landlord>()
+            .HasMany(x => x.Apartments)
+            .WithOne(x => x.Landlord)
+            .OnDelete(DeleteBehavior.Cascade);
+
     }
 }
