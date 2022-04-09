@@ -8,4 +8,9 @@ public class Address : BaseEntity
     public string City { get; set; }
     public string PostCode { get; set; }
     public string Country { get; set; }
+
+    public int AddressId { get; set; } 
+    public Address Addres { get; set; }
+    
+    
 }
