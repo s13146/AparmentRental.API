@@ -1,7 +1,5 @@
 using AparmentRental.Core.Entities;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Index = Microsoft.EntityFrameworkCore.Metadata.Internal.Index;
 
 namespace AparmentRental.Infastructure.Context;
 
@@ -14,10 +12,10 @@ public class MainContext : DbContext
     public DbSet<Tenant> Tenant { get; set; }
     public DbSet<Address> Address { get; set; }
     
-    
+    public MainContext() {}
     public MainContext(DbContextOptions options) : base(options)
     {}
-
+    
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBulider)
     {
         optionsBulider.UseSqlite("DataSource=abo.ApartmentRental.db");

@@ -1,0 +1,15 @@
+/Users/katarzynaw/RiderProjects/AparmentRental.API/ApartmentRental.Infastructure/bin/Debug/net6.0/ApartmentRental.Infastructure.deps.json
+/Users/katarzynaw/RiderProjects/AparmentRental.API/ApartmentRental.Infastructure/bin/Debug/net6.0/ApartmentRental.Infastructure.dll
+/Users/katarzynaw/RiderProjects/AparmentRental.API/ApartmentRental.Infastructure/bin/Debug/net6.0/ApartmentRental.Infastructure.pdb
+/Users/katarzynaw/RiderProjects/AparmentRental.API/ApartmentRental.Infastructure/bin/Debug/net6.0/ApartmentRental.Core.dll
+/Users/katarzynaw/RiderProjects/AparmentRental.API/ApartmentRental.Infastructure/bin/Debug/net6.0/ApartmentRental.Core.pdb
+/Users/katarzynaw/RiderProjects/AparmentRental.API/ApartmentRental.Infastructure/obj/Debug/net6.0/ApartmentRental.Infastructure.csproj.AssemblyReference.cache
+/Users/katarzynaw/RiderProjects/AparmentRental.API/ApartmentRental.Infastructure/obj/Debug/net6.0/ApartmentRental.Infastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/katarzynaw/RiderProjects/AparmentRental.API/ApartmentRental.Infastructure/obj/Debug/net6.0/ApartmentRental.Infastructure.AssemblyInfoInputs.cache
+/Users/katarzynaw/RiderProjects/AparmentRental.API/ApartmentRental.Infastructure/obj/Debug/net6.0/ApartmentRental.Infastructure.AssemblyInfo.cs
+/Users/katarzynaw/RiderProjects/AparmentRental.API/ApartmentRental.Infastructure/obj/Debug/net6.0/ApartmentRental.Infastructure.csproj.CoreCompileInputs.cache
+/Users/katarzynaw/RiderProjects/AparmentRental.API/ApartmentRental.Infastructure/obj/Debug/net6.0/ApartmentRental.Infastructure.csproj.CopyComplete
+/Users/katarzynaw/RiderProjects/AparmentRental.API/ApartmentRental.Infastructure/obj/Debug/net6.0/ApartmentRental.Infastructure.dll
+/Users/katarzynaw/RiderProjects/AparmentRental.API/ApartmentRental.Infastructure/obj/Debug/net6.0/refint/ApartmentRental.Infastructure.dll
+/Users/katarzynaw/RiderProjects/AparmentRental.API/ApartmentRental.Infastructure/obj/Debug/net6.0/ApartmentRental.Infastructure.pdb
+/Users/katarzynaw/RiderProjects/AparmentRental.API/ApartmentRental.Infastructure/obj/Debug/net6.0/ref/ApartmentRental.Infastructure.dll
