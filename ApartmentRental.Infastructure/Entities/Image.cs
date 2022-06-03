@@ -1,4 +1,4 @@
-namespace AparmentRental.Core.Entities;
+namespace AparmentRental.Infrastructure.Entities;
 
 public class Image : BaseEntity
 {

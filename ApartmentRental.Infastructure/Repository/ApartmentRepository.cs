@@ -1,12 +1,12 @@
-using AparmentRental.Core.Entities;
 using AparmentRental.Infastructure.Context;
 using Microsoft.EntityFrameworkCore;
 using AparmentRental.Infastructure.Exceptions;
+using AparmentRental.Infrastructure.Entities;
+using ApartmentRental.Infrastructure.Repository;
 
+namespace AparmentRental.Infrastructure.Repository;
 
-namespace AparmentRental.Infastructure.Repository;
-
-public class ApartmentRepository :IApartmentRepository
+public class ApartmentRepository : IApartmentRepository
 
 {
     private readonly MainContext _mainContext;
@@ -20,17 +20,18 @@ public class ApartmentRepository :IApartmentRepository
         var apartments = await _mainContext.Apartment.ToListAsync();
         foreach (var apartment in apartments)
         {
-            await _mainContext.Entry(apartment).Reference(x => x.Address).LoadAsync();
+          //  await _mainContext.Entry(apartment).Reference(x => x.Address).LoadAsync();
         }
         
         return apartments;
     }
+    
     public async Task<Apartment> GetByIdAsync(int id)
     {
         var apartment = await _mainContext.Apartment.SingleOrDefaultAsync(x => x.Id == id);
         if (apartment != null)
         {
-            await _mainContext.Entry(apartment).Reference(x => x.Address).LoadAsync();
+          //  await _mainContext.Entry(apartment).Reference(x => x.Address).LoadAsync();
             return apartment;
         }
 

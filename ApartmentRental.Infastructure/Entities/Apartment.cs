@@ -1,6 +1,5 @@
 using Microsoft.VisualBasic.CompilerServices;
-
-namespace AparmentRental.Core.Entities;
+namespace AparmentRental.Infrastructure.Entities;
 
 public class Apartment : BaseEntity
 {
@@ -15,7 +14,6 @@ public class Apartment : BaseEntity
     public int TenantId { get; set; }
     public Tenant Tenant { get; set; }
     public int AddressId { get; set; }
-    public Address Address { get; set; }
     public IEnumerable<Image> Images { get; set; }
 
 }

@@ -1,7 +1,6 @@
-using System.Net.Mail;
-using System.Runtime.CompilerServices;
+using AparmentRental.Infrastructure.Entities;
 
-namespace AparmentRental.Core.Entities;
+namespace ApartmentRental.Infrastructure.Entities;
 
 public class Account : BaseEntity
 {
