@@ -1,8 +1,9 @@
 
-using AparmentRental.Core.Services;
 using AparmentRental.Infastructure.Context;
+using AparmentRental.Infastructure.Repository;
 using AparmentRental.Infrastructure.Repository;
 using ApartmentRental.Infastructure.Repository;
+using ApartmentRental.Infrastructure.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,8 +19,8 @@ builder.Services.AddDbContext<MainContext>(options =>
         sqlOptions => sqlOptions.MigrationsAssembly("ApartmentRental.Infastructure")
     )
 );
+builder.Services.AddScoped<IAddressRepository, AddressRepository>();
 builder.Services.AddScoped<IApartmentRepository,AparmentRepository>();
-builder.Services.AddScoped<IApartmentService,IApartmentService>();
 
 var app = builder.Build();
 // Configure the HTTP request pipeline.

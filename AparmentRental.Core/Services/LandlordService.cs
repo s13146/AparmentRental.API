@@ -1,4 +1,7 @@
 using AparmentRental.Core.DTO;
+using AparmentRental.Infastructure.Repository;
+using AparmentRental.Infrastructure.Entities;
+
 namespace AparmentRental.Core.Services;
 
 public class LandlordService
@@ -13,11 +16,11 @@ public class LandlordService
     }
     public async Task AddNewLandlordAsync(LandlordCreationRequestDto dto)
     {
-        var address = await _addressRepository.FindAndGetAddressAsync(new Address
+        var address = await _addressRepository.FindAndGetAddressAsync(new Address()
         {
-            AppartmentNumber = dto.AppartmentNumber,
+            FlatNumber = dto.AppartmentNumber,
             Street = dto.Street,
-            BuildingNumber = dto.BuildingNumber,
+            BulidNumber = dto.BuildingNumber,
             City = dto.City,
             Country = dto.Country,
             PostCode = dto.PostCode
@@ -27,12 +30,12 @@ public class LandlordService
         {
             Account = new Account
             {
-                AddressId = address.Id,
+                AddresId = address.Id,
                 FirstName = dto.FirstName,
                 LastName = dto.LastName,
                 Email = dto.Email,
-                IsAccountActive = "true",
-                Telephone = dto.Telephone,
+                IsAccountActive = true,
+                PhoneNumber = dto.Telephone,
                 DateOfCreation = DateTime.UtcNow,
                 DateOfUpdate = DateTime.UtcNow
             },

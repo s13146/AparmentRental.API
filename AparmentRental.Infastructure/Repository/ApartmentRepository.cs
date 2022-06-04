@@ -20,7 +20,8 @@ public class AparmentRepository : IApartmentRepository
         var apartments = await _mainContext.Apartment.ToListAsync();
         foreach (var apartment in apartments)
         {
-          //  await _mainContext.Entry(apartment).Reference(x => x.Address).LoadAsync();
+            await _mainContext.Entry(apartment).Reference(x => x.Address).LoadAsync();
+            
         }
         
         return apartments;
@@ -31,7 +32,7 @@ public class AparmentRepository : IApartmentRepository
         var apartment = await _mainContext.Apartment.SingleOrDefaultAsync(x => x.Id == id);
         if (apartment != null)
         {
-          //  await _mainContext.Entry(apartment).Reference(x => x.Address).LoadAsync();
+            await _mainContext.Entry(apartment).Reference(x => x.Address).LoadAsync();
             return apartment;
         }
 

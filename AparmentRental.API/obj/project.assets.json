@@ -532,21 +532,10 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "AparmentRental.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/AparmentRental.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/AparmentRental.Core.dll": {}
-        }
-      },
       "AparmentRental.Infastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "AparmentRental.Core": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.3",
           "Microsoft.EntityFrameworkCore.Sqlite": "6.0.3"
         },
@@ -1341,11 +1330,6 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
-    },
-    "AparmentRental.Core/1.0.0": {
-      "type": "project",
-      "path": "../AparmentRental.Core/AparmentRental.Core.csproj",
-      "msbuildProject": "../AparmentRental.Core/AparmentRental.Core.csproj"
     },
     "AparmentRental.Infastructure/1.0.0": {
       "type": "project",

@@ -1,5 +1,9 @@
 using AparmentRental.Core.DTO;
 using AparmentRental.Core.Services;
+using AparmentRental.Infastructure.Exceptions;
+using AparmentRental.Infastructure.Repository;
+using AparmentRental.Infrastructure.Entities;
+using ApartmentRental.Infastructure.Repository;
 
 
 namespace ApartmentRental.Core.Services;
@@ -22,8 +26,8 @@ public class ApartmentService : IApartmentService
         var apartments = await _apartmentRepository.GetAllAsync();
         return apartments.Select(x => new ApartmentBasicInformationResponseDto(
             x.Price,
-            x.RoomsNumber,
-            x.Square,
+            x.RoomNumber,
+            x.SquareMeters,
             x.IsElevator,
             x.Address.City,
             x.Address.Street
@@ -47,8 +51,8 @@ public class ApartmentService : IApartmentService
             LandlordId = landlord.Id,
             IsElevator = dto.IsElevator,
             Price = dto.Price,
-            Square = dto.Square,
-            RoomsNumber = dto.RoomsNumber
+            SquareMeters = dto.Square,
+            RoomNumber = dto.RoomsNumber
         });
     }
 
@@ -61,8 +65,8 @@ public class ApartmentService : IApartmentService
 
         return new ApartmentBasicInformationResponseDto(
             cheapestOne.Price,
-            cheapestOne.RoomsNumber,
-            cheapestOne.Square,
+            cheapestOne.RoomNumber,
+            cheapestOne.SquareMeters,
             cheapestOne.IsElevator,
             cheapestOne.Address.City,
             cheapestOne.Address.Street);

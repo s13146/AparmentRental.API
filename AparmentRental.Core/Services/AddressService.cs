@@ -1,14 +1,15 @@
 
+using AparmentRental;
 using AparmentRental.Infastructure.Repository;
+using AparmentRental.Infrastructure.Entities;
+
 namespace AparmentRental.Core.Services;
 
 public class AddressService : IAddressService
 
 {
     private readonly IAddressRepository _addressRepository;
-    
-    
-    
+
     public AddressService(IAddressRepository addressRepository)
     {
         _addressRepository = addressRepository;
@@ -24,14 +25,14 @@ public class AddressService : IAddressService
             return id;
         }
 
-        var address = await _addressRepository.CreateAndGetAsync(new Address
+        var address = await _addressRepository.CreateAndGetAsync(new Address()
         {
             Country = country,
             City = city,
             PostCode = postCode,
             Street = street,
-            BuildingNumber = buildingNumber,
-            AppartmentNumber = apartmentNumber
+            BulidNumber = buildingNumber,
+            FlatNumber = apartmentNumber
         });
         return address.Id;
     }

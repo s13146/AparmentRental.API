@@ -7,4 +7,8 @@
         <RootNamespace>AparmentRental.Core</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\AparmentRental.Infastructure\AparmentRental.Infastructure.csproj" />
+    </ItemGroup>
+
 </Project>
