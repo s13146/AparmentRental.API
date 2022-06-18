@@ -532,6 +532,19 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "AparmentRental.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AparmentRental.Infastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AparmentRental.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AparmentRental.Core.dll": {}
+        }
+      },
       "AparmentRental.Infastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1331,6 +1344,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "AparmentRental.Core/1.0.0": {
+      "type": "project",
+      "path": "../AparmentRental.Core/AparmentRental.Core.csproj",
+      "msbuildProject": "../AparmentRental.Core/AparmentRental.Core.csproj"
+    },
     "AparmentRental.Infastructure/1.0.0": {
       "type": "project",
       "path": "../AparmentRental.Infastructure/AparmentRental.Infastructure.csproj",
@@ -1339,6 +1357,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "AparmentRental.Core >= 1.0.0",
       "AparmentRental.Infastructure >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.3",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.3",
@@ -1371,6 +1390,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "/Users/katarzynaw/RiderProjects/AparmentRental.API/AparmentRental.Core/AparmentRental.Core.csproj": {
+              "projectPath": "/Users/katarzynaw/RiderProjects/AparmentRental.API/AparmentRental.Core/AparmentRental.Core.csproj"
+            },
             "/Users/katarzynaw/RiderProjects/AparmentRental.API/AparmentRental.Infastructure/AparmentRental.Infastructure.csproj": {
               "projectPath": "/Users/katarzynaw/RiderProjects/AparmentRental.API/AparmentRental.Infastructure/AparmentRental.Infastructure.csproj"
             }
