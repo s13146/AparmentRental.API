@@ -54,3 +54,5 @@
 /Users/katarzynaw/RiderProjects/AparmentRental.API/AparmentRental.API/obj/Debug/net6.0/AparmentRental.API.pdb
 /Users/katarzynaw/RiderProjects/AparmentRental.API/AparmentRental.API/obj/Debug/net6.0/AparmentRental.API.genruntimeconfig.cache
 /Users/katarzynaw/RiderProjects/AparmentRental.API/AparmentRental.API/obj/Debug/net6.0/ref/AparmentRental.API.dll
+/Users/katarzynaw/RiderProjects/AparmentRental.API/AparmentRental.API/bin/Debug/net6.0/AparmentRental.Core.dll
+/Users/katarzynaw/RiderProjects/AparmentRental.API/AparmentRental.API/bin/Debug/net6.0/AparmentRental.Core.pdb

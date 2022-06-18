@@ -1,0 +1,15 @@
+/Users/katarzynaw/RiderProjects/AparmentRental.API/AparmentRental.Core/bin/Debug/net6.0/AparmentRental.Core.deps.json
+/Users/katarzynaw/RiderProjects/AparmentRental.API/AparmentRental.Core/bin/Debug/net6.0/AparmentRental.Core.dll
+/Users/katarzynaw/RiderProjects/AparmentRental.API/AparmentRental.Core/bin/Debug/net6.0/AparmentRental.Core.pdb
+/Users/katarzynaw/RiderProjects/AparmentRental.API/AparmentRental.Core/bin/Debug/net6.0/AparmentRental.Infastructure.dll
+/Users/katarzynaw/RiderProjects/AparmentRental.API/AparmentRental.Core/bin/Debug/net6.0/AparmentRental.Infastructure.pdb
+/Users/katarzynaw/RiderProjects/AparmentRental.API/AparmentRental.Core/obj/Debug/net6.0/AparmentRental.Core.csproj.AssemblyReference.cache
+/Users/katarzynaw/RiderProjects/AparmentRental.API/AparmentRental.Core/obj/Debug/net6.0/AparmentRental.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/katarzynaw/RiderProjects/AparmentRental.API/AparmentRental.Core/obj/Debug/net6.0/AparmentRental.Core.AssemblyInfoInputs.cache
+/Users/katarzynaw/RiderProjects/AparmentRental.API/AparmentRental.Core/obj/Debug/net6.0/AparmentRental.Core.AssemblyInfo.cs
+/Users/katarzynaw/RiderProjects/AparmentRental.API/AparmentRental.Core/obj/Debug/net6.0/AparmentRental.Core.csproj.CoreCompileInputs.cache
+/Users/katarzynaw/RiderProjects/AparmentRental.API/AparmentRental.Core/obj/Debug/net6.0/AparmentRental.Core.csproj.CopyComplete
+/Users/katarzynaw/RiderProjects/AparmentRental.API/AparmentRental.Core/obj/Debug/net6.0/AparmentRental.Core.dll
+/Users/katarzynaw/RiderProjects/AparmentRental.API/AparmentRental.Core/obj/Debug/net6.0/refint/AparmentRental.Core.dll
+/Users/katarzynaw/RiderProjects/AparmentRental.API/AparmentRental.Core/obj/Debug/net6.0/AparmentRental.Core.pdb
+/Users/katarzynaw/RiderProjects/AparmentRental.API/AparmentRental.Core/obj/Debug/net6.0/ref/AparmentRental.Core.dll
